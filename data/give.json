@@ -1,0 +1,10 @@
+{
+  "costPerMeal": 0.42,
+  "tiers": [
+    { "amount": 25,  "note": "A week of groceries for one household." },
+    { "amount": 50,  "note": "Fills a pantry shelf for a Saturday morning.", "featured": true },
+    { "amount": 100, "note": "Keeps a delivery van on the road for a day." },
+    { "amount": 250, "note": "Stocks an entire pantry for a week." }
+  ],
+  "monthly": { "amount": 20, "note": "Recurring gifts let us commit to wholesalers months ahead, which is where the price per meal actually drops." }
+}

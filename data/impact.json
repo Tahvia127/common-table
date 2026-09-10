@@ -1,0 +1,40 @@
+{
+  "note": "Update these numbers once a quarter. Everything on the dashboard is generated from this file.",
+  "updated": "2026-08-31",
+  "headline": [
+    { "n": 1284000, "format": "compact", "label": "Meals distributed", "sub": "since 2021" },
+    { "n": 9420, "format": "comma", "label": "Households served", "sub": "in FY2026" },
+    { "n": 12, "format": "plain", "label": "Neighborhood pantries", "sub": "south and west sides" },
+    { "n": 31500, "format": "comma", "label": "Volunteer hours", "sub": "in FY2026" }
+  ],
+  "mealsByYear": [
+    { "year": "2021", "meals": 96000 },
+    { "year": "2022", "meals": 148000 },
+    { "year": "2023", "meals": 203000 },
+    { "year": "2024", "meals": 262000 },
+    { "year": "2025", "meals": 289000 },
+    { "year": "2026", "meals": 286000 }
+  ],
+  "spending": [
+    { "label": "Food and distribution", "pct": 79, "amount": 1738000 },
+    { "label": "Pantry operations", "pct": 9, "amount": 198000 },
+    { "label": "Administration", "pct": 7, "amount": 154000 },
+    { "label": "Fundraising", "pct": 5, "amount": 110000 }
+  ],
+  "byNeighborhood": [
+    { "name": "North Lawndale", "meals": 52400 },
+    { "name": "Englewood", "meals": 48900 },
+    { "name": "Austin", "meals": 41200 },
+    { "name": "Roseland", "meals": 33800 },
+    { "name": "South Shore", "meals": 29100 },
+    { "name": "Humboldt Park", "meals": 24600 },
+    { "name": "Back of the Yards", "meals": 21300 },
+    { "name": "Woodlawn", "meals": 18700 }
+  ],
+  "sources": [
+    { "label": "Individual gifts", "pct": 41 },
+    { "label": "Foundations", "pct": 33 },
+    { "label": "Corporate and in-kind", "pct": 18 },
+    { "label": "Government", "pct": 8 }
+  ]
+}

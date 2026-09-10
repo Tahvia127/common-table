@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{NAME}} | {{TAGLINE}}</title>
+<meta name="description" content="{{MISSION_SHORT}}">
+<meta property="og:title" content="{{NAME}} — {{TAGLINE}}">
+<meta property="og:description" content="{{MISSION_SHORT}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="skip" href="#impact">Skip to the numbers</a>
+{{DEMOBAR}}
+
+<header class="nav" id="nav">
+  <div class="shell">
+    <a class="logo" href="#top"><span class="m">{{NAME}}</span><span class="s">{{TAGLINE}}</span></a>
+    <nav aria-label="Primary"><ul>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#give">Give</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <a class="btn amber" href="#give">Donate</a>
+  </div>
+</header>
+
+<header class="hero" id="top">
+  <img src="assets/img/hero.webp" alt="" width="1600" height="1067" fetchpriority="high">
+  <div class="inner"><div class="shell">
+    <p class="eyebrow">{{TAGLINE}}</p>
+    <h1>Food that already exists, moved to people who need it.</h1>
+    <p>{{MISSION}}</p>
+    <div class="cta">
+      <a class="btn amber" href="#give">Give today</a>
+      <a class="btn onteal" href="#impact">See where it goes</a>
+    </div>
+  </div></div>
+</header>
+
+<section class="section" id="impact"><div class="shell">
+  <div class="head">
+    <p class="eyebrow">Impact dashboard</p>
+    <h2>Every number on this page comes from one file</h2>
+    <p>Most nonprofits publish a PDF annual report that nobody opens. This updates when the numbers do, and a donor can check our work in about ten seconds.</p>
+  </div>
+
+  <div class="tiles">{{TILES}}</div>
+
+  <div class="charts">
+    <div class="panel rv">
+      <h3>Meals distributed each year</h3>
+      <p class="cap">FY2021 to {{FY}}. The 2026 dip is a wholesaler contract that ended in March; the replacement starts in October.</p>
+      {{CHART_LINE}}
+      {{TABLE}}
+    </div>
+    <div class="panel rv">
+      <h3>Where each dollar goes</h3>
+      <p class="cap">{{FY}} audited figures.</p>
+      {{CHART_DONUT}}
+      <ul class="legend">{{LEGEND}}</ul>
+    </div>
+  </div>
+
+  <div class="charts" style="grid-template-columns:1fr">
+    <div class="panel rv">
+      <h3>Meals by neighborhood</h3>
+      <p class="cap">{{FY}}. Hover a bar for the exact count.</p>
+      {{CHART_BARS}}
+    </div>
+  </div>
+
+  <div class="charts" style="grid-template-columns:1fr">
+    <div class="panel rv">
+      <h3>Where the money comes from</h3>
+      <p class="cap">{{FY}} revenue by source.</p>
+      <div class="srcbar">{{SRCBAR}}</div>
+      <ul class="legend">{{SRCLEG}}</ul>
+    </div>
+  </div>
+
+  <p class="updated">Figures updated {{UPDATED}} &middot; {{EIN}} &middot; Audited financials available on request.</p>
+</div></section>
+
+<section class="section section-alt" id="give"><div class="shell">
+  <div class="head">
+    <p class="eyebrow">Give</p>
+    <h2>A dollar buys more here than it does at the store</h2>
+    <p>We buy at wholesale and take surplus at no cost, so a gift stretches further than a grocery run. Our current cost is <strong>${{COSTPERMEAL}} per meal</strong>.</p>
+  </div>
+  <div class="tiers">{{TIERS}}</div>
+  <div class="give-box rv">
+    <div class="give-row">
+      <div class="f">
+        <label for="amt">Or choose your own amount</label>
+        <input id="amt" type="number" min="1" step="1" value="50" inputmode="numeric">
+      </div>
+      <button class="btn fill" type="button" id="giveGo">Give $50</button>
+    </div>
+    <p class="impact-out" id="impactOut"></p>
+    <p class="give-note">Demo only. In production this hands off to Zeffy, which charges nonprofits nothing, so 100% of a gift arrives. Donorbox and Givebutter drop in the same way.</p>
+  </div>
+  <div class="give-box rv">
+    <h3>Give monthly</h3>
+    <p style="margin:0 0 .5rem;color:var(--soft)">{{MONTHLY_NOTE}}</p>
+    <p style="margin:0"><strong>${{MONTHLY}} a month</strong> is {{MONTHLY_MEALS}} meals over a year.</p>
+  </div>
+</div></section>
+
+<section class="section" id="programs"><div class="shell">
+  <div class="head"><p class="eyebrow">Programs</p><h2>Three things, done properly</h2></div>
+  <div class="progs">
+    <article class="prog rv"><div class="im"><img src="assets/img/community.webp" alt="" loading="lazy" width="900" height="585"></div>
+      <div class="bd"><h3>Neighborhood pantries</h3><p>Twelve sites, open the same hours every week. No appointment, no means test, no questions about why you came.</p></div></article>
+    <article class="prog rv"><div class="im"><img src="assets/img/reach.webp" alt="" loading="lazy" width="900" height="585"></div>
+      <div class="bd"><h3>Surplus rescue</h3><p>We collect from wholesalers and farms the day before food would be thrown out, and it reaches a pantry within eighteen hours.</p></div></article>
+    <article class="prog rv"><div class="im"><img src="assets/img/team.webp" alt="" loading="lazy" width="1100" height="715"></div>
+      <div class="bd"><h3>Saturday delivery</h3><p>For households that cannot travel, volunteers run boxes to the door. Currently 340 households a week.</p></div></article>
+  </div>
+</div></section>
+
+<section class="section teal" id="contact"><div class="shell">
+  <div class="head"><p class="eyebrow">Contact</p><h2>Get in touch</h2>
+    <p>Whether you want to give, volunteer, or ask how the numbers above are calculated, we will answer.</p></div>
+  <div class="info">
+    <div><h4>Office</h4><p>{{OFF1}}<br>{{OFF2}}</p></div>
+    <div><h4>Reach us</h4><p><a href="tel:{{PHONE_RAW}}">{{PHONE}}</a></p><p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p></div>
+    <div><h4>Transparency</h4><p>{{EIN}}</p><p>Audited financials and Form 990 on request.</p></div>
+  </div>
+</div></section>
+
+{{DEMOFOOT}}
+<footer><div class="shell">
+  <span>&copy; <span id="yr">2026</span> {{NAME}} &middot; {{EIN}}</span>
+  <span>{{OFF1}}, {{OFF2}}</span>
+  <span><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></span>
+</div></footer>
+{{SCRIPT}}
+</body>
+</html>

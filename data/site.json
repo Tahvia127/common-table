@@ -1,0 +1,16 @@
+{
+  "name": "Common Table",
+  "tagline": "Chicago Food Security",
+  "ein": "EIN 00-0000000",
+  "mission": "Common Table moves surplus food from wholesalers and farms to twelve neighborhood pantries across the south and west sides. No appointment, no means test, no questions.",
+  "phone": "(555) 555-0139",
+  "email": "hello@commontable.example",
+  "office": { "line1": "3420 W Roosevelt Rd", "line2": "Chicago, IL 60624" },
+  "fiscalYear": "FY2026",
+  "demo": {
+    "show": true,
+    "text": "Demo site. Common Table is a fictional nonprofit; every figure below is invented.",
+    "linkText": "Made by Framework Studio",
+    "url": "https://tahvia127.github.io/framework-studio/"
+  }
+}
